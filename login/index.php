@@ -1,6 +1,6 @@
 <?php
 /* Database connection included File*/
-include("../db.php");
+include("../config/db.php");
 
 ?>
 <!DOCTYPE html>
