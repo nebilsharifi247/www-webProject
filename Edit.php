@@ -1,5 +1,5 @@
 <?php
-include("db.php");
+include("config/db.php");
 $token=$_POST["token"];
 $username=$_POST["username"];
 $email=$_POST["email"];
