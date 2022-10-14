@@ -144,7 +144,7 @@ function data($data){
   }
   
   function  Sql_check($data){
-    include("db.php");
+    global $connection;
     if($connection){
       $data=mysqli_real_escape_string($connection,$data);
     }
@@ -184,7 +184,7 @@ function data($data){
   
   
   function Update_user($id,$username,$email,$about,$img){
-    include("db.php");
+    global $connection;
     $query="UPDATE  users SET username='$username',email='$email',text='$about',img='$img' WHERE id='$id' And admin=0";
     $con=mysqli_query($connection,$query);
     mysqli_close($connection);
