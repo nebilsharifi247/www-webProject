@@ -1,5 +1,5 @@
 <?php
-require_once('db.php');
+require_once('config/db.php');
 if(!isset($_SESSION['username'])){
   ob_start();
         header('Location: /login?login=false');
