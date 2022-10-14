@@ -1,6 +1,6 @@
 <?php
 /*Database Config and connection File including */
-require_once("db.php");
+require_once("config/db.php");
 /*
 If the user has been entered and the title is created with the name of the user, here's check if the user does not meet the user, we will log in to the login page to re-login
 */
