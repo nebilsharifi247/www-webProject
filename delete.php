@@ -13,7 +13,7 @@ if(!$_POST['id'] && !$_POST["admin"] && !$_POST['user_token']){
 }
 else{
   /*Inputing id */
-  include_once('db.php');
+  include_once('config/db.php');
   $id=mysqli_real_escape_string($connection,$_POST['id']);
   $admin=mysqli_real_escape_string($connection,$_POST['admin']);
   $token=$_POST['user_token'];
